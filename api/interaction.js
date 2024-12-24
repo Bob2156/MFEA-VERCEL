@@ -76,3 +76,4 @@ export default async function handler(req, res) {
     console.error('Unsupported interaction type:', interaction.type);
     res.status(400).json({ error: 'Unsupported interaction type' });
 }
+//test
