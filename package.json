@@ -1,0 +1,11 @@
+{
+  "name": "mfea-vercel",
+  "version": "1.0.0",
+  "main": "api/interaction.js",
+  "scripts": {
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "tweetnacl": "^1.0.3"
+  }
+}
