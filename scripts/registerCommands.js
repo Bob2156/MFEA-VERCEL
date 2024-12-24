@@ -13,6 +13,7 @@ const commands = [
 
 (async () => {
     try {
+        console.log('Registering slash commands...');
         const url = `https://discord.com/api/v10/applications/${APPLICATION_ID}/guilds/${GUILD_ID}/commands`;
         const response = await fetch(url, {
             method: 'PUT',
@@ -26,6 +27,6 @@ const commands = [
         const data = await response.json();
         console.log('Slash commands registered:', data);
     } catch (error) {
-        console.error('Error registering commands:', error);
+        console.error('Error registering slash commands:', error);
     }
 })();
