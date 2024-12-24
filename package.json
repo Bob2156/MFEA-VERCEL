@@ -1,11 +1,13 @@
 {
-  "name": "mfea-vercel",
+  "name": "discord-bot",
   "version": "1.0.0",
   "main": "api/interaction.js",
   "scripts": {
-    "start": "vercel dev"
+    "start": "vercel dev",
+    "register-commands": "node scripts/registerCommands.js"
   },
   "dependencies": {
-    "tweetnacl": "^1.0.3"
+    "tweetnacl": "^1.0.3",
+    "node-fetch": "^2.6.7"
   }
 }
